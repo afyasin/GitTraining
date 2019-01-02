@@ -1,0 +1,17 @@
+Git created by Linus Torvalds - same as linux
+Commits are saves of the code to Git system
+
+git diff commitid1 commitid2 --> give us the changes just like diff -u file1 file2
+
+git log --stat --> give a log of commits and changes. It'll also show ll the files the commit changed
+git log --> gives a shorter version of the above
+
+git clone <url> --> clones the entire repository (files and change logs) to your machine
+Seems it clones onto your folder
+
+git checkout <commit_id> --> reverts the file to that version. Many uses e.g. checking to see when a bug was introduced
+
+git init --> doing this in a directory makes it a git repository. A .git file will be added.
+
+git status --> gives details about the last commit
+
