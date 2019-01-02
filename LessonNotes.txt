@@ -15,3 +15,8 @@ git init --> doing this in a directory makes it a git repository. A .git file wi
 
 git status --> gives details about the last commit
 
+git add <file> --> adds files to the repository
+
+git commit -m "Commit Message" --> Commits the addition to the repository
+
+
