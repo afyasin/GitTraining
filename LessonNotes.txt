@@ -19,4 +19,11 @@ git add <file> --> adds files to the repository
 
 git commit -m "Commit Message" --> Commits the addition to the repository
 
+All files are int he Working directory. When you do "git add", they're added to the staging area. When you "commit", they're added to the repository.
+
+git diff --> compares working directory versions to Staging area versions.
+
+git diff --staged   --> compares staging area versions to the repository versions.
+
+git reset --hard  --> irreversible discarding of changes in working directory and staging area.
 
