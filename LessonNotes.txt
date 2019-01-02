@@ -23,7 +23,7 @@ All files are int he Working directory. When you do "git add", they're added to 
 
 git diff --> compares working directory versions to Staging area versions.
 
-git diff --staged   --> compares staging area versions to the repository versions.
+git diff --staged   --> compares staging area version to the latest commit in the repository.
 
 git reset --hard  --> irreversible discarding of changes in working directory and staging area.
 
