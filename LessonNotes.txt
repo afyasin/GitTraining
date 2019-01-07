@@ -1,3 +1,6 @@
+#Created for GitHub training
+#Ali Yasin 
+
 Git created by Linus Torvalds - same as linux
 Commits are saves of the code to Git system
 
