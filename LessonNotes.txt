@@ -27,3 +27,47 @@ git diff --staged   --> compares staging area version to the latest commit in th
 
 git reset --hard  --> irreversible discarding of changes in working directory and staging area.
 
+git branch ---> lists all branches of the code
+
+git branch <branch name> --> creates a new branch, however, if you list branches again, the branch with the asterisk is the one checked out
+Note: You will not see remote (those created by others) branches without the --all flag
+
+git branch -d <branch_name> deleted the branch
+
+
+git checkout <branch name> --> checks out a different branch
+Note: git checkout master --> checks out the master branch and gets rid of the weird "head detached at commit-id" message
+A branch created by someone else is a remote branch. This can be checked out by others.
+When you check out a remote branch, a local branch is created to keep track of your commits, e.g.: "Branch 'coins' set up to track remote branch 'coins' from 'origin'.
+Switched to a new branch 'coins"
+
+git log --graph --oneline --all   --> prints graph of all branches
+git log --graph --oneline <branch1> <Branch2>    ---> prints graph of certain branches
+
+If you delete a branch without merging its commits into another, its commits are lost!
+If you merge and then delete, those branch commits are merged and a part of the merged branch
+
+Diagramming tools: gliffy, yUML
+
+git merge <branch1> <branch2>   --> include branch1 into branch2
+
+GITHUB
+------
+
+Working Directories and Staging Areas are all local. The commits on local and Github have to be synced for the repositories to be in synch.
+
+Git has the concept of a remote repository ("Remotes")- which is a GitHub repository. Remotes allow push and fetch.
+
+git remote lists remote GitHub repositories.
+
+These can be added by: git remote add <remote name> <remote GitHub url>
+Now do: git remote and <remote name> should be displayed
+
+git remote -v --> provides verbose output and lists push and fetch URLs.
+
+git push <remote name> <local branch>   ---> pushes local branch content to remote branch
+
+
+
+
+
