@@ -15,7 +15,7 @@ git init --> doing this in a directory makes it a git repository. A .git file wi
 
 git status --> gives details about the last commit
 
-git add <file> --> adds files to the repository
+git add <file> --> adds files to the staging area int he repository 
 
 git commit -m "Commit Message" --> Commits the addition to the repository
 
@@ -23,7 +23,7 @@ All files are int he Working directory. When you do "git add", they're added to 
 
 git diff --> compares working directory versions to Staging area versions.
 
-git diff --staged   --> compares staging area version to the latest commit in the repository.
+git diff --staged   --> compares staging area version to the latest commit in the repository. Must do an "add" to show up here.
 
 git reset --hard  --> irreversible discarding of changes in working directory and staging area.
 
@@ -66,7 +66,10 @@ Now do: git remote and <remote name> should be displayed
 git remote -v --> provides verbose output and lists push and fetch URLs.
 
 git push <remote name> <local branch>   ---> pushes local branch content to remote branch
+Note: you need to commit all changes locally for them to be pushed to GitHub 
+Push all changes to keep versions in synch
 
+git pull  <remote name> <local branch name> --> will pull changes to local machine
 
 
 
