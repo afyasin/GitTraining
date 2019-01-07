@@ -72,7 +72,16 @@ git push <remote name> <local branch>   ---> pushes local branch content to remo
 Note: you need to commit all changes locally for them to be pushed to GitHub 
 Push all changes to keep versions in synch
 
-git pull  <remote name> <local branch name> --> will pull changes to local machine
+git fetch  <remote name> <local branch name> --> will pull changes to local machine
+
+git pull  <remote name> <local branch name> --> is a fetch and  merge
+NOTE: If you're making changes int he working directory and have not committed them, Git and Gothub will not merge remote changes to local to protect your local files. 
+SO: add your changes to working area and commit. Then you can merge from remote.
+THEN, you can merge remote changes to local by:
+git diff remotes/origin/master master   --> shows difference between remote repository and local
+git merge remotes/origin/master master   --> shows difference between remote repository and local  --> merge the two
+
+
 
 
 
